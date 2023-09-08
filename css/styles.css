@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Futura";
+  src: url(../fonts/futura-regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Futura", sans-serif;
+}
+
+/* GENERAL */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ****** */
+/* NAVBAR */
+/* ****** */
+
+.navbar {
+  background-color: #f6f6f6;
+  padding: 5px 0;
+}
+
+.navbar-brand {
+  display: flex;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo-image {
+  width: 64px;
+}
+
+.navbar-logo-text {
+  color: #0074e4;
+  font-size: 1.6rem;
+}
