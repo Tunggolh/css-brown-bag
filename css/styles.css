@@ -5,66 +5,6 @@
   font-style: normal;
 }
 
-:root {
-  --primary-color: #0074e4;
-  --secondary-color: #cbd2e2;
-  --accent-color: #51678f;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Futura", sans-serif;
-}
-
-/* GENERAL */
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-}
-
-.grid-col--3 {
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
-.btn {
-  padding: 1.2rem 1.6rem;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: var(--primary-color);
-  color: #fff;
-  font-weight: bold;
-}
-
-.btn-secondary {
-  background-color: var(--secondary-color);
-}
-
-.btn-primary:hover {
-  background-color: #0268c7;
-}
-
-.btn-secondary:hover {
-  background-color: #bfc3cf;
-}
-
 /* ****** */
 /* NAVBAR */
 /* ****** */
@@ -196,15 +136,6 @@ body {
   color: #fff;
 }
 
-.block {
-  display: block;
-}
-
-.inline-block {
-  display: inline-block;
-  width: 100px;
-}
-
 /* EXAMPLE 2: flex */
 .content-sample-flex {
   flex: 1;
@@ -216,52 +147,22 @@ body {
   align-self: center;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
 .box-flex {
   width: 100px;
   height: 100px;
   background-color: var(--accent-color);
 }
 
-.flex-justify-start {
-  justify-content: flex-start;
+/* EXAMPLE 3: Grid */
+.content-sample-grid {
+  flex: 1;
+  display: grid;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  grid-gap: 20px;
+  height: 38rem;
 }
 
-.flex-justify-center {
-  justify-content: center;
-}
-
-.flex-justify-end {
-  justify-content: flex-end;
-}
-
-.flex-space-around {
-  justify-content: space-around;
-}
-
-.flex-space-between {
-  justify-content: space-between;
-}
-
-.flex-space-evenly {
-  justify-content: space-evenly;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.align-start {
-  align-items: start;
-}
-
-.align-end {
-  align-items: end;
+.box-grid {
+  background-color: var(--accent-color);
 }
