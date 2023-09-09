@@ -31,6 +31,30 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  padding: 1.2rem 1.6rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: #0268c7;
+}
+
+.btn-secondary:hover {
+  background-color: #bfc3cf;
+}
+
 /* ****** */
 /* NAVBAR */
 /* ****** */
@@ -101,8 +125,65 @@ body {
 
 .content-item {
   display: none;
+  padding: 3.2rem 2.4rem;
 }
 
 .content-item.active {
   display: block;
+}
+
+.content-title {
+  font-size: 3.2rem;
+}
+
+.content-secondary-heading {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.content-heading p {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+/* CONTENT */
+.content-example {
+  margin-top: 1.2rem;
+}
+
+.content {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.content-description {
+  flex: 1;
+  font-size: 1.6rem;
+}
+
+.content-sample-text {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.content-sample-text p {
+  background-color: var(--secondary-color);
+  padding: 2.4rem 3.6rem;
+  border-radius: 5px;
+}
+
+/* EXAMPLE 1 */
+.sample-1 {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 100px;
 }

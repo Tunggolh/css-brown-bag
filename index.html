@@ -33,7 +33,59 @@
         </ul>
       </nav>
       <div class="main-content container">
-        <div class="content-item item-1 active">item1</div>
+        <section class="content-item item-1 active">
+          <div class="content-heading">
+            <h2 class="content-title">display</h2>
+            <p>
+              The display property specifies the display behavior of an element
+            </p>
+          </div>
+          <hr />
+          <!-- BLOCK & INLINE -->
+          <article id="block-inline" class="content-example">
+            <h3 class="content-secondary-heading">block & inline</h3>
+            <div class="content-buttons">
+              <button class="btn btn-primary" data-class="block">
+                display: block
+              </button>
+              <button class="btn btn-secondary" data-class="inline">
+                display: inline
+              </button>
+              <button class="btn btn-secondary" data-class="inline-block">
+                display: inline-block
+              </button>
+            </div>
+
+            <div class="content">
+              <div class="content-description">
+                <p>
+                  <strong>block</strong> level elements take up as much space as
+                  possible by default. Each block level element will start a new
+                  line on the page, stacking down the page.
+                </p>
+                <br />
+                <p>
+                  <strong>inline</strong> elements display in a line. They do
+                  not force the text after them to a new line
+                </p>
+                <br />
+                <strong>inline-block</strong> It's formatted just like the
+                inline element, where it doesn't start on a new line. BUT, you
+                can set width and height values
+              </div>
+              <div class="content-sample-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque, alias? Adipisci minus
+                  <span class="sample-1 block">quisquam nihil quod</span>
+                  voluptatibus architecto facere iure natus dolore! Delectus,
+                  minima aperiam corporis beatae est magni nisi inventore
+                  tenetur dicta voluptatum perspiciatis?
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
         <div class="content-item item-2">item2</div>
         <div class="content-item item-3">item3</div>
       </div>
