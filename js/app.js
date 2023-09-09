@@ -1,6 +1,28 @@
 const navTabs = document.querySelector(".nav-tabs");
+
+// BLOCK & INLINE
 const blockInlineContainer = document.querySelector("#block-inline");
 const sample1 = document.querySelector(".sample-1");
+
+// FLEX
+const flexDirectionBtnContainer = document.querySelector("#flex-direction");
+const flexJustifyBtnContainer = document.querySelector("#justify-content");
+const flexAlignBtnContainer = document.querySelector("#align-items");
+
+const sample2Container = document.querySelector(".content-sample-flex");
+
+const changeActiveButton = (btnContainer, currentActiveBtn) => {
+  const activeBtn = btnContainer.querySelector(".btn-primary");
+  activeBtn.classList.replace("btn-primary", "btn-secondary");
+
+  currentActiveBtn.classList.replace("btn-secondary", "btn-primary");
+};
+
+const changeElClass = (btn, target, removeClass) => {
+  const targetClass = btn.getAttribute("data-class");
+  target.classList.remove(...removeClass);
+  target.classList.add(targetClass);
+};
 
 navTabs.addEventListener("click", (e) => {
   if (e.target && e.target.classList.contains("nav-link")) {
@@ -35,14 +57,46 @@ blockInlineContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("btn")) {
     e.preventDefault();
 
-    const activeButton = blockInlineContainer.querySelector(".btn-primary");
-    activeButton.classList.replace("btn-primary", "btn-secondary");
+    changeActiveButton(blockInlineContainer, e.target);
 
-    e.target.classList.replace("btn-secondary", "btn-primary");
+    changeElClass(e.target, sample1, ["block", "inline-block"]);
+  }
+});
 
-    const targetClass = e.target.getAttribute("data-class");
+flexDirectionBtnContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    e.preventDefault();
 
-    sample1.classList.remove("block", "inline-block", "inline");
-    sample1.classList.add(targetClass);
+    changeActiveButton(flexDirectionBtnContainer, e.target);
+    changeElClass(e.target, sample2Container, ["flex-row", "flex-column"]);
+  }
+});
+
+flexJustifyBtnContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    e.preventDefault();
+
+    changeActiveButton(flexJustifyBtnContainer, e.target);
+    changeElClass(e.target, sample2Container, [
+      "flex-justify-start",
+      "flex-justify-center",
+      "flex-justify-end",
+      "flex-space-around",
+      "flex-space-between",
+      "flex-space-evenly",
+    ]);
+  }
+});
+
+flexAlignBtnContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    e.preventDefault();
+
+    changeActiveButton(flexAlignBtnContainer, e.target);
+    changeElClass(e.target, sample2Container, [
+      "align-center",
+      "align-start",
+      "align-end",
+    ]);
   }
 });

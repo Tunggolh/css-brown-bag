@@ -8,7 +8,7 @@
 :root {
   --primary-color: #0074e4;
   --secondary-color: #cbd2e2;
-  --accent-color: #516690;
+  --accent-color: #51678f;
 }
 
 * {
@@ -31,6 +31,15 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+}
+
+.grid-col--3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
 .btn {
   padding: 1.2rem 1.6rem;
   border-radius: 10px;
@@ -41,6 +50,7 @@ body {
 .btn-primary {
   background-color: var(--primary-color);
   color: #fff;
+  font-weight: bold;
 }
 
 .btn-secondary {
@@ -108,7 +118,7 @@ body {
   border: 1px solid transparent;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  transition: border-style 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-link.active {
@@ -141,6 +151,12 @@ body {
   margin-bottom: 1.2rem;
 }
 
+.content-buttons p {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
 .content-heading p {
   font-size: 1.6rem;
   margin-bottom: 1.2rem;
@@ -148,7 +164,7 @@ body {
 
 /* CONTENT */
 .content-example {
-  margin-top: 1.2rem;
+  margin: 1.2rem 0;
 }
 
 .content {
@@ -165,6 +181,7 @@ body {
 .content-sample-text {
   flex: 1;
   font-size: 1.5rem;
+  align-self: center;
 }
 
 .content-sample-text p {
@@ -173,7 +190,7 @@ body {
   border-radius: 5px;
 }
 
-/* EXAMPLE 1 */
+/* EXAMPLE 1: block & inline */
 .sample-1 {
   background-color: var(--accent-color);
   color: #fff;
@@ -186,4 +203,65 @@ body {
 .inline-block {
   display: inline-block;
   width: 100px;
+}
+
+/* EXAMPLE 2: flex */
+.content-sample-flex {
+  flex: 1;
+  display: flex;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  gap: 10px;
+  height: 38rem;
+  align-self: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.box-flex {
+  width: 100px;
+  height: 100px;
+  background-color: var(--accent-color);
+}
+
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-end {
+  justify-content: flex-end;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.align-end {
+  align-items: end;
 }
