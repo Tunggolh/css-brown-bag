@@ -26,13 +26,14 @@
             <a href="#" class="nav-link" data-target="item-1">Display</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active" data-target="item-2"
+            <a href="#" class="nav-link active" data-target="item-2">Pseudo-classes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-target="item-3"
               >Selectors</a
             >
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" data-target="item-3">Pseudo-classes</a>
-          </li>
+          
         </ul>
       </nav>
       <div class="main-content container">
@@ -46,9 +47,73 @@
           <!-- GRID -->
         </section>
         <section class="content-item item-2 active">
+          <div class="content-heading">
+            <h2 class="content-title">Pseudo Classes</h2>
+            <p>
+              a keyword added to a selector that specifies a special state of the selected
+              element
+            </p>
+          </div>
+          <hr>
+          <br>
+          <article id="hover">
+            <h3 class="content-secondary-heading">:hover</h3>
+              <div class="content">
+                <div class="content-description">
+                  <p>
+                    Matches when a user designates an item with a pointing device, such as holding the mouse pointer over the item.
+                  </p>
+                  <br />
+                </div>
+                <div class="content-sample-code">
+                  <code>.btn.btn-sample { <br>
+                    &emsp; background-color: #000; <br>
+                    &emsp; color: #fff;<br>
+                    &emsp; width: 100%;<br>
+                  }<br><br>
+                .btn.btn-sample:hover{<br>
+                &emsp; background-color: #ccc;<br>
+                }</code>
+                </div>
+                <div class="content-sample-result">
+                  <button class="btn btn-sample">
+                    Hover Me
+                  </button>
+                </div>
+              </div>
+              <hr>
+            </article>
+          <br>
+          <article id="focus">
+            <h3 class="content-secondary-heading">:focus</h3>
+              <div class="content">
+                <div class="content-description">
+                  <p>
+                    Matches when an element has focus
+                  </p>
+                  <br />
+                </div>
+                <div class="content-sample-code">
+                  <code>.form-control { <br>
+                    &emsp; padding: 0.6rem 1.2rem; <br>
+                    &emsp; width: 100%; <br>
+                  }<br><br>
+                .form-control:focus{<br>
+                  &emsp; outline: solid blue; <br>
+                }
+                  </code>
+                </div>
+                <div class="content-sample-result">
+                  <input type="text" class="form-control" placeholder="Enter text here">
+                </div>
+              </div>
+              <hr>
+            </article>
+          <br>
+        </section>
+        <section class="content-item item-3">
           <!-- SELECTORS -->
         </section>
-      <section class="content-item item-3">item3</section>
     </main>
 
     <script src="js/app.js"></script>

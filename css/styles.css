@@ -165,17 +165,40 @@
 /* ********* */
 /* SELECTORS */
 /* ********* */
-.content-sample-selectors {
+.content-sample-code {
   font-size: 1.6rem;
   flex: 1 1 0px;
   background-color: var(--secondary-color);
   padding: 1.6rem;
-}
-
-.content-sample-code {
-  display: flex;
+  margin-bottom: 1.6rem;
 }
 
 .content-sample-code code {
   flex: 1 1 0px;
+}
+
+/* PSEUDO CLASSES */
+.btn.btn-sample {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+
+.btn.btn-sample:hover {
+  background-color: #ccc;
+}
+
+.content-sample-result {
+  flex: 1 1 0px;
+}
+
+.form-control {
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #494949;
+  width: 100%;
+}
+
+.form-control:focus {
+  outline: solid blue;
 }
