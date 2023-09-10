@@ -105,28 +105,28 @@ navTabs.addEventListener("click", (e) => {
 //   }
 // });
 
-gridColBtnContainer.addEventListener("click", (e) => {
-  if (e.target.classList.contains("btn")) {
-    e.preventDefault();
+// gridColBtnContainer.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("btn")) {
+//     e.preventDefault();
 
-    changeActiveButton(gridColBtnContainer, e.target);
-    changeElClass(e.target, sample3Container, [
-      "grid-col--1",
-      "grid-col--2",
-      "grid-col--3",
-    ]);
-  }
-});
+//     changeActiveButton(gridColBtnContainer, e.target);
+//     changeElClass(e.target, sample3Container, [
+//       "grid-col--1",
+//       "grid-col--2",
+//       "grid-col--3",
+//     ]);
+//   }
+// });
 
-gridRowBtnContainer.addEventListener("click", (e) => {
-  if (e.target.classList.contains("btn")) {
-    e.preventDefault();
+// gridRowBtnContainer.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("btn")) {
+//     e.preventDefault();
 
-    changeActiveButton(gridRowBtnContainer, e.target);
-    changeElClass(e.target, sample3Container, [
-      "grid-row--1",
-      "grid-row--2",
-      "grid-row--3",
-    ]);
-  }
-});
+//     changeActiveButton(gridRowBtnContainer, e.target);
+//     changeElClass(e.target, sample3Container, [
+//       "grid-row--1",
+//       "grid-row--2",
+//       "grid-row--3",
+//     ]);
+//   }
+// });

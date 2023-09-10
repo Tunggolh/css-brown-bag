@@ -82,12 +82,7 @@
   display: block;
 }
 
-.content-title {
-  font-size: 3.2rem;
-}
-
 .content-secondary-heading {
-  font-size: 2.2rem;
   margin-bottom: 1.2rem;
 }
 
@@ -165,4 +160,22 @@
 
 .box-grid {
   background-color: var(--accent-color);
+}
+
+/* ********* */
+/* SELECTORS */
+/* ********* */
+.content-sample-selectors {
+  font-size: 1.6rem;
+  flex: 1 1 0px;
+  background-color: var(--secondary-color);
+  padding: 1.6rem;
+}
+
+.content-sample-code {
+  display: flex;
+}
+
+.content-sample-code code {
+  flex: 1 1 0px;
 }

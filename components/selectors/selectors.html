@@ -1,0 +1,109 @@
+<div class="content-heading">
+  <h2 class="content-title">Selectors</h2>
+  <p>
+    defines the patterns to select elements to which a set of CSS rules are then
+    applied along with their specificity
+  </p>
+</div>
+<hr />
+<br />
+<h3 class="content-secondary-heading">
+  Lowest to Highest Priority Selectors :
+</h3>
+<div class="content">
+  <div class="content-description">
+    <h4>0 - Universal Selector</h4>
+    <p>used to select all the elements on the HTML page</p>
+  </div>
+  <div class="content-sample-selectors">
+    <code
+      >* { <br />
+      margin: 0; <br />
+      padding: 0; <br />
+      box-sizing: border-box; <br />
+      }
+    </code>
+  </div>
+</div>
+<div class="content">
+  <div class="content-description">
+    <h4>1 - Element Selector</h4>
+    <p>used to selects all elements with the specified element name</p>
+  </div>
+  <div class="content-sample-selectors">
+    <code
+      >h5 { <br />
+      color: red; <br />
+      font-size: 20px; <br />
+      }
+    </code>
+  </div>
+</div>
+<div class="content">
+  <div class="content-description">
+    <h4>2 - Class/Pseudo Selector</h4>
+    <p>
+      <strong>.class</strong> selector selects elements with a specific class
+      attribute.
+    </p>
+    <p><strong>Pseudo</strong> selects elements that are in a specific state</p>
+  </div>
+  <div class="content-sample-selectors">
+    <code
+      >.box .box-1 { <br />
+      color: blue; <br />
+      width: 100px; <br />
+      }<br />
+      <br />
+      .btn:hover { <br />
+      color: #b2b2b2; <br />
+      }</code
+    >
+  </div>
+</div>
+<div class="content">
+  <div class="content-description">
+    <h4>3 - id Selector</h4>
+    <p>
+      uses the id attribute of an HTML element to select a specific element.
+    </p>
+  </div>
+  <div class="content-sample-selectors">
+    <code
+      >#hero-section {<br />
+      background-color: #green; <br />
+      }</code
+    >
+  </div>
+</div>
+<div class="content">
+  <div class="content-description">
+    <h4>4 - Inline Styles</h4>
+    <p>
+      directly affect the tag they are written in, without the use of selectors.
+    </p>
+  </div>
+  <div class="content-sample-selectors">
+    <code>
+      &lt;p style="color: red"&gt;<br />
+      Lorem ipsum dolor sit amet.<br />
+      &lt;/p&gt;</code
+    >
+  </div>
+</div>
+<div class="content">
+  <div class="content-description">
+    <h4>5 - !important</h4>
+    <p>
+      overrides all previous styling rules for that specific property on that
+      element
+    </p>
+  </div>
+  <div class="content-sample-selectors">
+    <code>
+      p { <br />
+      color: #fff !important <br />
+      }</code
+    >
+  </div>
+</div>
