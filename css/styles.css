@@ -108,7 +108,7 @@
   gap: 2rem;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1000px) {
   .content {
     flex-direction: column;
   }
@@ -152,7 +152,7 @@
   align-self: center;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1000px) {
   .content-sample-flex {
     padding: 1.2rem;
     height: 200px;
