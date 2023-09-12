@@ -51,6 +51,12 @@
   font-size: 1.6rem;
 }
 
+@media screen and (max-width: 415px) {
+  .nav-item {
+    font-size: 1.2rem;
+  }
+}
+
 .nav-link {
   color: var(--primary-color);
   padding: 1.2rem 1.6rem 0.8rem 1.6rem;
