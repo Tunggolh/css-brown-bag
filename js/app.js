@@ -56,77 +56,76 @@ navTabs.addEventListener("click", (e) => {
   }
 });
 
-// BLOCK & INLINE
-// blockInlineContainer.addEventListener("click", (e) => {
-//   if (e.target.classList.contains("btn")) {
-//     e.preventDefault();
+blockInlineContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    e.preventDefault();
 
-//     changeActiveButton(blockInlineContainer, e.target);
+    changeActiveButton(blockInlineContainer, e.target);
 
-//     changeElClass(e.target, sample1, ["block", "inline-block"]);
-//   }
-// });
+    changeElClass(e.target, sample1, ["block", "inline-block"]);
+  }
+});
 
-// flexDirectionBtnContainer.addEventListener("click", (e) => {
-//   if (e.target.classList.contains("btn")) {
-//     e.preventDefault();
+flexDirectionBtnContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    e.preventDefault();
 
-//     changeActiveButton(flexDirectionBtnContainer, e.target);
-//     changeElClass(e.target, sample2Container, ["flex-row", "flex-column"]);
-//   }
-// });
+    changeActiveButton(flexDirectionBtnContainer, e.target);
+    changeElClass(e.target, sample2Container, ["flex-row", "flex-column"]);
+  }
+});
 
-// flexJustifyBtnContainer.addEventListener("click", (e) => {
-//   if (e.target.classList.contains("btn")) {
-//     e.preventDefault();
+flexJustifyBtnContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    e.preventDefault();
 
-//     changeActiveButton(flexJustifyBtnContainer, e.target);
-//     changeElClass(e.target, sample2Container, [
-//       "flex-justify-start",
-//       "flex-justify-center",
-//       "flex-justify-end",
-//       "flex-space-around",
-//       "flex-space-between",
-//       "flex-space-evenly",
-//     ]);
-//   }
-// });
+    changeActiveButton(flexJustifyBtnContainer, e.target);
+    changeElClass(e.target, sample2Container, [
+      "flex-justify-start",
+      "flex-justify-center",
+      "flex-justify-end",
+      "flex-space-around",
+      "flex-space-between",
+      "flex-space-evenly",
+    ]);
+  }
+});
 
-// flexAlignBtnContainer.addEventListener("click", (e) => {
-//   if (e.target.classList.contains("btn")) {
-//     e.preventDefault();
+flexAlignBtnContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    e.preventDefault();
 
-//     changeActiveButton(flexAlignBtnContainer, e.target);
-//     changeElClass(e.target, sample2Container, [
-//       "align-center",
-//       "align-start",
-//       "align-end",
-//     ]);
-//   }
-// });
+    changeActiveButton(flexAlignBtnContainer, e.target);
+    changeElClass(e.target, sample2Container, [
+      "align-center",
+      "align-start",
+      "align-end",
+    ]);
+  }
+});
 
-// gridColBtnContainer.addEventListener("click", (e) => {
-//   if (e.target.classList.contains("btn")) {
-//     e.preventDefault();
+gridColBtnContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    e.preventDefault();
 
-//     changeActiveButton(gridColBtnContainer, e.target);
-//     changeElClass(e.target, sample3Container, [
-//       "grid-col--1",
-//       "grid-col--2",
-//       "grid-col--3",
-//     ]);
-//   }
-// });
+    changeActiveButton(gridColBtnContainer, e.target);
+    changeElClass(e.target, sample3Container, [
+      "grid-col--1",
+      "grid-col--2",
+      "grid-col--3",
+    ]);
+  }
+});
 
-// gridRowBtnContainer.addEventListener("click", (e) => {
-//   if (e.target.classList.contains("btn")) {
-//     e.preventDefault();
+gridRowBtnContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    e.preventDefault();
 
-//     changeActiveButton(gridRowBtnContainer, e.target);
-//     changeElClass(e.target, sample3Container, [
-//       "grid-row--1",
-//       "grid-row--2",
-//       "grid-row--3",
-//     ]);
-//   }
-// });
+    changeActiveButton(gridRowBtnContainer, e.target);
+    changeElClass(e.target, sample3Container, [
+      "grid-row--1",
+      "grid-row--2",
+      "grid-row--3",
+    ]);
+  }
+});
