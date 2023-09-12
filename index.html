@@ -23,10 +23,10 @@
       <nav class="nav container">
         <ul class="nav-tabs">
           <li class="nav-item">
-            <a href="#" class="nav-link" data-target="item-1">Display</a>
+            <a href="#" class="nav-link active" data-target="item-1">Display</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active" data-target="item-2">Pseudo-classes</a>
+            <a href="#" class="nav-link" data-target="item-2">Pseudo-classes</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link" data-target="item-3"
@@ -37,16 +37,177 @@
         </ul>
       </nav>
       <div class="main-content container">
-        <section class="content-item item-1">
+        <section class="content-item item-1 active">
           <!-- BLOCK HEADING -->
+          <div class="content-heading">
+            <h2 class="content-title">display</h2>
+            <p>The display property specifies the display behavior of an element</p>
+          </div>
+          
           <hr />
           <!-- BLOCK & INLINE -->
+          <article id="block-inline" class="content-example">
+            <h3 class="content-secondary-heading">block & inline</h3>
+          
+            <div class="content">
+              <div class="content-description">
+                <div class="content-buttons">
+                  <div class="grid grid-col--3">
+                    <button class="btn btn-primary" data-class="block">block</button>
+                    <button class="btn btn-secondary" data-class="inline">inline</button>
+                    <button class="btn btn-secondary" data-class="inline-block">
+                      inline-block
+                    </button>
+                  </div>
+                </div>
+                <br />
+                <p>
+                  <strong>block</strong> level elements take up as much space as possible
+                  by default. Each block level element will start a new line on the page,
+                  stacking down the page.
+                </p>
+                <br />
+                <p>
+                  <strong>inline</strong> elements display in a line. They do not force
+                  the text after them to a new line
+                </p>
+                <br />
+                <strong>inline-block</strong> It's formatted just like the inline element,
+                where it doesn't start on a new line. BUT, you can set width and height
+                values
+              </div>
+              <div class="content-sample-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, alias?
+                  Adipisci minus
+                  <span class="sample-1 block">quisquam nihil quod</span>
+                  voluptatibus architecto facere iure natus dolore! Delectus, minima
+                  aperiam corporis beatae est magni nisi inventore tenetur dicta
+                  voluptatum perspiciatis?
+                </p>
+              </div>
+            </div>
+          </article>
+          
           <hr />
           <!-- FLEX -->
+          <article id="flex" class="content-example">
+            <h3 class="content-secondary-heading">flex</h3>
+          
+            <div class="content">
+              <div class="content-description">
+                <p>
+                  <strong>flex</strong> is used to create a flexible layout for organizing
+                  and aligning elements in a container
+                </p>
+                <br />
+                <div id="flex-direction" class="content-buttons">
+                  <p>flex-direction</p>
+                  <div class="grid grid-col--3">
+                    <button class="btn btn-primary" data-class="flex-row">row</button>
+                    <button class="btn btn-secondary" data-class="flex-column">
+                      column
+                    </button>
+                  </div>
+                </div>
+                <br />
+                <div id="justify-content" class="content-buttons">
+                  <p>justify-content</p>
+                  <div class="grid grid-col--3">
+                    <button class="btn btn-primary" data-class="flex-justify-start">
+                      flex-start
+                    </button>
+                    <button class="btn btn-secondary" data-class="flex-justify-center">
+                      center
+                    </button>
+                    <button class="btn btn-secondary" data-class="flex-justify-end">
+                      flex-end
+                    </button>
+                    <button class="btn btn-secondary" data-class="flex-space-between">
+                      space-between
+                    </button>
+                    <button class="btn btn-secondary" data-class="flex-space-around">
+                      space-around
+                    </button>
+                    <button class="btn btn-secondary" data-class="flex-space-evenly">
+                      space-evenly
+                    </button>
+                  </div>
+                </div>
+                <br />
+                <div id="align-items" class="content-buttons">
+                  <p>align-items</p>
+                  <div class="grid grid-col--3">
+                    <button class="btn btn-primary" data-class="align-start">
+                      start
+                    </button>
+                    <button class="btn btn-secondary" data-class="align-center">
+                      center
+                    </button>
+                    <button class="btn btn-secondary" data-class="align-end">end</button>
+                  </div>
+                </div>
+              </div>
+              <div class="content-sample-flex">
+                <div class="box-flex"></div>
+                <div class="box-flex"></div>
+                <div class="box-flex"></div>
+              </div>
+            </div>
+          </article>
+          
           <hr />
           <!-- GRID -->
+          <article id="grid" class="content-example">
+            <h3 class="content-secondary-heading">grid</h3>
+          
+            <div class="content">
+              <div class="content-description">
+                <p>
+                  <strong>grid</strong> is a powerful tool that allows for two-dimensional
+                  layouts to be created on the web.
+                </p>
+                <br />
+                <div id="grid-columns" class="content-buttons">
+                  <p>grid-template-columns</p>
+                  <div class="grid grid-col--3">
+                    <button class="btn btn-primary" data-class="grid-col--1">1fr</button>
+                    <button class="btn btn-secondary" data-class="grid-col--2">
+                      repeat(1, 2fr)
+                    </button>
+                    <button class="btn btn-secondary" data-class="grid-col--3">
+                      repeat(1, 3fr)
+                    </button>
+                  </div>
+                </div>
+                <br />
+                <div id="grid-rows" class="content-buttons">
+                  <p>grid-template-rows</p>
+                  <div class="grid grid-col--3">
+                    <button class="btn btn-primary" data-class="grid-row--1">50px</button>
+                    <button class="btn btn-secondary" data-class="grid-row--2">
+                      50px 75px
+                    </button>
+                    <button class="btn btn-secondary" data-class="grid-row--3">
+                      50px 75px 100px
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="content-sample-grid grid-row--1">
+                <div class="box-grid"></div>
+                <div class="box-grid"></div>
+                <div class="box-grid"></div>
+                <div class="box-grid"></div>
+                <div class="box-grid"></div>
+                <div class="box-grid"></div>
+                <div class="box-grid"></div>
+              </div>
+            </div>
+          </article>
+          
         </section>
-        <section class="content-item item-2 active">
+        <section class="content-item item-2">
           <div class="content-heading">
             <h2 class="content-title">Pseudo Classes</h2>
             <p>
@@ -71,7 +232,7 @@
                     &emsp; color: #fff;<br>
                     &emsp; width: 100%;<br>
                   }<br><br>
-                .btn.btn-sample:hover{<br>
+                .btn.btn-sample<span style="background-color: #ffd700;">:hover</span>{<br>
                 &emsp; background-color: #ccc;<br>
                 }</code>
                 </div>
@@ -98,7 +259,7 @@
                     &emsp; padding: 0.6rem 1.2rem; <br>
                     &emsp; width: 100%; <br>
                   }<br><br>
-                .form-control:focus{<br>
+                .form-control<span style="background-color: #ffd700;">:focus</span>{<br>
                   &emsp; outline: solid blue; <br>
                 }
                   </code>
@@ -110,9 +271,236 @@
               <hr>
             </article>
           <br>
+          <article id="first-child">
+            <h3 class="content-secondary-heading">:first-child</h3>
+              <div class="content">
+                <div class="content-description">
+                  <p>
+                    used to select the specified selector, only if it is the first child of its parent
+                  </p>
+                  <br />
+                </div>
+                <div class="content-sample-code">
+                  <code>
+                    HTML: <br><br>
+                    &lt;ul class="list-1"&gt; <br>
+                    &emsp;&lt;li&gt;Sample 1&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 2&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 3&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 4&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 5&lt;/li&gt; <br>
+                    &lt;/ul&gt; <br>
+                    <br>
+                    CSS: <br><br>
+                    <code>.list-1 <span style="background-color: #ffd700;">li:first-child</span> { <br>
+                      &emsp;background-color: yellow; <br>
+                    }</code>
+                  </code>
+                </div>
+                <div class="content-sample-result">
+                  <ul class="sample-list list-1">
+                    <li>Sample 1</li>
+                    <li>Sample 2</li>
+                    <li>Sample 3</li>
+                    <li>Sample 4</li>
+                    <li>Sample 5</li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+            </article>
+          <br>
+          <article id="last-child">
+            <h3 class="content-secondary-heading">:last-child</h3>
+              <div class="content">
+                <div class="content-description">
+                  <p>
+                    used to select the specified selector, only if it is the last child of its parent
+                  </p>
+                  <br />
+                </div>
+                <div class="content-sample-code">
+                  <code>
+                    HTML: <br><br>
+                    &lt;ul class="list-2"&gt; <br>
+                    &emsp;&lt;li&gt;Sample 1&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 2&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 3&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 4&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 5&lt;/li&gt; <br>
+                    &lt;/ul&gt; <br>
+                    <br>
+                    CSS: <br><br>
+                    <code>.list-2 <span style="background-color: #ffd700;">li:last-child</span> { <br>
+                      &emsp;background-color: yellow; <br>
+                    }</code>
+                  </code>
+                </div>
+                <div class="content-sample-result">
+                  <ul class="sample-list list-2">
+                    <li>Sample 1</li>
+                    <li>Sample 2</li>
+                    <li>Sample 3</li>
+                    <li>Sample 4</li>
+                    <li>Sample 5</li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+            </article>
+          <br>
+          <article id="nth-child">
+            <h3 class="content-secondary-heading">:nth-child()</h3>
+              <div class="content">
+                <div class="content-description">
+                  <p>
+                    selector matches every element that is the nth child of its parent
+                  </p>
+                  <br />
+                </div>
+                <div class="content-sample-code">
+                  <code>
+                    HTML: <br><br>
+                    &lt;ul class="list-3"&gt; <br>
+                    &emsp;&lt;li&gt;Sample 1&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 2&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 3&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 4&lt;/li&gt; <br>
+                    &emsp;&lt;li&gt;Sample 5&lt;/li&gt; <br>
+                    &lt;/ul&gt; <br>
+                    <br>
+                    CSS: <br><br>
+                    <code>.list-3 <span style="background-color: #ffd700;">li:nth-child(odd)</span> { <br>
+                      &emsp;background-color: yellow; <br>
+                    }</code>
+                  </code>
+                </div>
+                <div class="content-sample-result">
+                  <ul class="sample-list list-3">
+                    <li>Sample 1</li>
+                    <li>Sample 2</li>
+                    <li>Sample 3</li>
+                    <li>Sample 4</li>
+                    <li>Sample 5</li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+            </article>
+          <br>
         </section>
         <section class="content-item item-3">
           <!-- SELECTORS -->
+          <div class="content-heading">
+            <h2 class="content-title">Selectors</h2>
+            <p>
+              defines the patterns to select elements to which a set of CSS rules are then
+              applied along with their specificity
+            </p>
+          </div>
+          <hr />
+          <br />
+          <h3 class="content-secondary-heading">
+            Lowest to Highest Priority Selectors :
+          </h3>
+          <div class="content">
+            <div class="content-description">
+              <h4>0 - Universal Selector</h4>
+              <p>used to select all the elements on the HTML page</p>
+            </div>
+            <div class="content-sample-code">
+              <code
+                >* { <br />
+                margin: 0; <br />
+                padding: 0; <br />
+                box-sizing: border-box; <br />
+                }
+              </code>
+            </div>
+          </div>
+          <div class="content">
+            <div class="content-description">
+              <h4>1 - Element Selector</h4>
+              <p>used to selects all elements with the specified element name</p>
+            </div>
+            <div class="content-sample-code">
+              <code
+                >h5 { <br />
+                color: red; <br />
+                font-size: 20px; <br />
+                }
+              </code>
+            </div>
+          </div>
+          <div class="content">
+            <div class="content-description">
+              <h4>2 - Class/Pseudo Selector</h4>
+              <p>
+                <strong>.class</strong> selector selects elements with a specific class
+                attribute.
+              </p>
+              <p><strong>Pseudo</strong> selects elements that are in a specific state</p>
+            </div>
+            <div class="content-sample-code">
+              <code
+                >.box .box-1 { <br />
+                color: blue; <br />
+                width: 100px; <br />
+                }<br />
+                <br />
+                .btn:hover { <br />
+                color: #b2b2b2; <br />
+                }</code
+              >
+            </div>
+          </div>
+          <div class="content">
+            <div class="content-description">
+              <h4>3 - id Selector</h4>
+              <p>
+                uses the id attribute of an HTML element to select a specific element.
+              </p>
+            </div>
+            <div class="content-sample-code">
+              <code
+                >#hero-section {<br />
+                background-color: #green; <br />
+                }</code
+              >
+            </div>
+          </div>
+          <div class="content">
+            <div class="content-description">
+              <h4>4 - Inline Styles</h4>
+              <p>
+                directly affect the tag they are written in, without the use of selectors.
+              </p>
+            </div>
+            <div class="content-sample-code">
+              <code>
+                &lt;p style="color: red"&gt;<br />
+                Lorem ipsum dolor sit amet.<br />
+                &lt;/p&gt;</code
+              >
+            </div>
+          </div>
+          <div class="content">
+            <div class="content-description">
+              <h4>5 - !important</h4>
+              <p>
+                overrides all previous styling rules for that specific property on that
+                element
+              </p>
+            </div>
+            <div class="content-sample-code">
+              <code>
+                p { <br />
+                color: #fff !important <br />
+                }</code
+              >
+            </div>
+          </div>
+          
         </section>
     </main>
 

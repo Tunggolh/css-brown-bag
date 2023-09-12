@@ -202,3 +202,27 @@
 .form-control:focus {
   outline: solid blue;
 }
+
+/* :FIRST-CHILD */
+.sample-list {
+  font-size: 1.6rem;
+}
+
+#first-child .content-sample-result,
+#last-child .content-sample-result,
+#nth-child .content-sample-result {
+  display: flex;
+  justify-content: center;
+}
+
+.list-1 li:first-child {
+  background-color: yellow;
+}
+
+.list-2 li:last-child {
+  background-color: yellow;
+}
+
+.list-3 li:nth-child(odd) {
+  background-color: yellow;
+}
