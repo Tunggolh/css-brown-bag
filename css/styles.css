@@ -108,6 +108,12 @@
   gap: 2rem;
 }
 
+@media screen and (max-width: 930px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
 .content-description {
   flex: 1;
   font-size: 1.6rem;
@@ -132,6 +138,10 @@
 }
 
 /* EXAMPLE 2: flex */
+.content-sample-flex-parent {
+  flex: 1;
+}
+
 .content-sample-flex {
   flex: 1;
   display: flex;
@@ -142,10 +152,33 @@
   align-self: center;
 }
 
+@media screen and (max-width: 930px) {
+  .content-sample-flex {
+    padding: 1.2rem;
+    height: 200px;
+  }
+
+  .content-sample-grid {
+    padding: 1.2rem;
+    height: 200px;
+  }
+}
+
 .box-flex {
   width: 100px;
   height: 100px;
   background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 530px) {
+  .box-flex {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.content-sample-grid-parent {
+  flex: 1;
 }
 
 /* EXAMPLE 3: Grid */

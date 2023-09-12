@@ -44,9 +44,15 @@ article {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 80%;
+  }
+}
+
 .grid {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 .grid-col--1 {
