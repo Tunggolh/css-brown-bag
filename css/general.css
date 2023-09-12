@@ -50,6 +50,12 @@ article {
   }
 }
 
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 .grid {
   display: grid;
   grid-gap: 10px;
